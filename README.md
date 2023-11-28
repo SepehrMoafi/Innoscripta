@@ -38,24 +38,25 @@ To get a local copy up and running, follow these simple steps.
    ```sh
    composer dump-autoload
 
-4. **Migrate database:**
+4. **Database Migrations:**
    ```sh
    php artisan migrate
-   
-5. **Run project:**
+ 
+5. **Seed database:**
    ```sh
-   php artisan serve
+   php artisan db:seed --class="Features\\Sources\\Seeders\\SourceSeeder"
    
 6. **Run project:**
    ```sh
-   php artisan queue:work --queue:
+   php artisan serve
+   
+7. **Run jobs:**
+   ```sh
+   php artisan queue:work
 ## Configuration
 
 ### Environment Setup:
 - Configure your `.env` file with the necessary database and API settings.
-
-### Database Migrations:
-- Run `php artisan migrate` to set up your database.
 
 ## Usage
 
