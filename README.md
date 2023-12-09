@@ -53,8 +53,9 @@ To get a local copy up and running, follow these simple steps.
 7. **Run jobs:**
    ```sh
    php artisan queue:work
-## Configuration
 
+## Configuration
+- send ``client = api`` to get json result or noting to get blade result.
 ### Environment Setup:
 - Configure your `.env` file with the necessary database and API settings.
 
